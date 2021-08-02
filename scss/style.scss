@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    .wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100vh;
+        #grid {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            &>div {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                div {
+                    height: 5px;
+                    width: 5px;
+                    &.vie {
+                        background-color: black;
+                    }
+                }
+            }
+        }
+        section {
+            text-align: center;
+        }
+    }
+}
